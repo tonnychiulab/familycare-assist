@@ -1,0 +1,15 @@
+{
+  "emptyKey": "Tempel Gemini API Key.",
+  "invalidKey": "API Key tidak valid atau verifikasi gagal.",
+  "forbidden": "Kunci tidak memiliki izin, dibatasi, atau Gemini API belum diaktifkan.",
+  "quota": "Kuota atau batas laju tercapai.",
+  "serviceUnavailable": "Layanan Gemini sementara tidak tersedia.",
+  "validationFailed": "API Key tidak dapat diverifikasi.",
+  "noModels": "Tidak ada model generateContent untuk kunci ini.",
+  "badRequest": "Gemini menolak permintaan. Periksa prompt, konten, dan model.",
+  "keyExpired": "API Key tidak lagi valid dan harus diverifikasi ulang.",
+  "modelUnavailable": "Model terpilih tidak tersedia.",
+  "network": "Tidak dapat terhubung ke Gemini API.",
+  "safetyBlocked": "Gemini memblokir konten berdasarkan kebijakan keamanan.",
+  "emptyResponse": "Gemini tidak mengembalikan teks yang dapat ditampilkan."
+}

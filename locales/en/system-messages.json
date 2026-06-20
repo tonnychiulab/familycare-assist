@@ -1,0 +1,10 @@
+{
+  "demoModeTitle": "AI-assisted mode",
+  "demoModeBody": "Avoid identifiable personal data. All content requires review by a healthcare professional.",
+  "ready": "Ready",
+  "processing": "Processing",
+  "voiceListening": "Listening…",
+  "exampleLoaded": "Example loaded",
+  "languageChanged": "Language changed",
+  "sessionReset": "Consultation session reset"
+}

@@ -1,0 +1,15 @@
+{
+  "emptyKey": "กรุณาวาง Gemini API Key",
+  "invalidKey": "API Key ไม่ถูกต้องหรือยืนยันไม่สำเร็จ",
+  "forbidden": "คีย์ไม่มีสิทธิ์ ถูกจำกัด หรือยังไม่ได้เปิดใช้ Gemini API",
+  "quota": "ถึงโควตาหรืออัตราจำกัดแล้ว",
+  "serviceUnavailable": "บริการ Gemini ไม่พร้อมใช้งานชั่วคราว",
+  "validationFailed": "ไม่สามารถยืนยัน API Key ได้",
+  "noModels": "ไม่มีโมเดล generateContent สำหรับคีย์นี้",
+  "badRequest": "Gemini ปฏิเสธคำขอ กรุณาตรวจ Prompt เนื้อหา และโมเดล",
+  "keyExpired": "API Key ใช้งานไม่ได้และต้องยืนยันใหม่",
+  "modelUnavailable": "โมเดลที่เลือกไม่พร้อมใช้งาน",
+  "network": "ไม่สามารถเชื่อมต่อ Gemini API",
+  "safetyBlocked": "Gemini บล็อกเนื้อหาตามนโยบายความปลอดภัย",
+  "emptyResponse": "Gemini ไม่ได้ส่งข้อความที่แสดงได้"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Pilih model Gemini",
+  "summary": "Daftar dimuat setelah validasi kunci dan hanya menampilkan model generateContent.",
+  "label": "Model",
+  "verifyFirst": "Verifikasi API Key terlebih dahulu",
+  "choose": "Pilih model",
+  "showPreview": "Tampilkan model Preview／Experimental",
+  "resourceName": "Nama resource",
+  "lifecycle": "Siklus hidup",
+  "inputLimit": "Batas token input",
+  "outputLimit": "Batas token output",
+  "errorRequired": "Pilih model Gemini terlebih dahulu."
+}

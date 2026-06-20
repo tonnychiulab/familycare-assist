@@ -1,0 +1,10 @@
+{
+  "title": "安全與使用範圍",
+  "summary": "這是瀏覽器端 BYOK 版本，金鑰無法像後端祕密一樣被完全保護。",
+  "itemNoRealData": "未完成機構審查前，請勿輸入可識別的真實病患資料。",
+  "itemBrowserRisk": "API Key 會存在此分頁的瀏覽器環境，可能被瀏覽器擴充功能或開發者工具讀取。",
+  "itemNoRepository": "API Key 不會寫入 GitHub Repository、網址或本網站的 Local Storage。",
+  "itemReview": "所有 AI 內容都必須由合格醫事人員覆核。",
+  "consent": "我了解上述風險，並同意以自己的 Gemini API Key 進行封閉測試。",
+  "errorConsentRequired": "請先閱讀並同意 BYOK 風險聲明。"
+}

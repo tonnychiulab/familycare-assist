@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">FamilyCare Assist logo</title>
+  <desc id="desc">A medical cross combined with a conversation bubble.</desc>
+  <rect width="128" height="128" rx="30" fill="#155eef"/>
+  <path d="M31 32h66a14 14 0 0 1 14 14v35a14 14 0 0 1-14 14H67L45 111V95H31A14 14 0 0 1 17 81V46a14 14 0 0 1 14-14Z" fill="#fff"/>
+  <path d="M58 45h13v13h13v13H71v13H58V71H45V58h13V45Z" fill="#155eef"/>
+</svg>

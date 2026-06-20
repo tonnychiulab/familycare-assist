@@ -1,0 +1,15 @@
+{
+  "emptyKey": "Paste a Gemini API Key.",
+  "invalidKey": "The API Key is invalid or validation failed.",
+  "forbidden": "The key lacks permission, is restricted, or the Gemini API is not enabled.",
+  "quota": "Quota or rate limit reached. Check usage and billing.",
+  "serviceUnavailable": "The Gemini service is temporarily unavailable.",
+  "validationFailed": "The API Key could not be validated. Check the key and network.",
+  "noModels": "No generateContent model is available for this key.",
+  "badRequest": "Gemini rejected the request. Check the prompt, content, and model settings.",
+  "keyExpired": "The API Key is no longer valid and must be verified again.",
+  "modelUnavailable": "The selected model is unavailable. Verify the key and choose another model.",
+  "network": "Could not connect to the Gemini API. Check the network or browser policy.",
+  "safetyBlocked": "Gemini blocked this content under its safety policy.",
+  "emptyResponse": "Gemini returned no displayable text."
+}

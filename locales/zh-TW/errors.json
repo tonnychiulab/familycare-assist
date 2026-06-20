@@ -1,0 +1,13 @@
+{
+  "unknown": "發生未知錯誤",
+  "localeLoadFailed": "語系檔案載入失敗",
+  "emptyInput": "請先輸入內容",
+  "inputTooLong": "輸入內容超過允許長度",
+  "aiUnavailable": "AI 服務目前無法使用",
+  "voiceUnsupported": "此瀏覽器不支援即時語音辨識，請改用文字輸入",
+  "microphoneDenied": "麥克風權限被拒絕",
+  "voiceRecognitionFailed": "語音辨識失敗",
+  "voiceStartFailed": "無法啟動語音辨識",
+  "exampleLoadFailed": "範例載入失敗",
+  "exampleInvalid": "JSON 範例格式不正確"
+}

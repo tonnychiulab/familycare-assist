@@ -1,0 +1,13 @@
+{
+  "unknown": "Đã xảy ra lỗi không xác định",
+  "localeLoadFailed": "Không tải được tệp ngôn ngữ",
+  "emptyInput": "Vui lòng nhập nội dung trước",
+  "inputTooLong": "Nội dung vượt quá độ dài cho phép",
+  "aiUnavailable": "Dịch vụ AI hiện không khả dụng",
+  "voiceUnsupported": "Trình duyệt này không hỗ trợ nhận dạng giọng nói trực tiếp. Hãy dùng nhập văn bản.",
+  "microphoneDenied": "Quyền truy cập micrô bị từ chối",
+  "voiceRecognitionFailed": "Nhận dạng giọng nói thất bại",
+  "voiceStartFailed": "Không thể khởi động nhận dạng giọng nói",
+  "exampleLoadFailed": "Không tải được ca mẫu",
+  "exampleInvalid": "Định dạng JSON của ca mẫu không hợp lệ"
+}

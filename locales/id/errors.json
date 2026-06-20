@@ -1,0 +1,13 @@
+{
+  "unknown": "Terjadi kesalahan yang tidak diketahui",
+  "localeLoadFailed": "Gagal memuat berkas bahasa",
+  "emptyInput": "Masukkan konten terlebih dahulu",
+  "inputTooLong": "Input melebihi panjang yang diizinkan",
+  "aiUnavailable": "Layanan AI sedang tidak tersedia",
+  "voiceUnsupported": "Browser ini tidak mendukung pengenalan suara langsung. Gunakan input teks.",
+  "microphoneDenied": "Izin mikrofon ditolak",
+  "voiceRecognitionFailed": "Pengenalan suara gagal",
+  "voiceStartFailed": "Tidak dapat memulai pengenalan suara",
+  "exampleLoadFailed": "Gagal memuat contoh",
+  "exampleInvalid": "Format contoh JSON tidak valid"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "An toàn và phạm vi sử dụng",
+  "summary": "Đây là bản BYOK chạy trên trình duyệt; khóa không thể được bảo vệ như bí mật phía máy chủ.",
+  "itemNoRealData": "Không nhập dữ liệu người bệnh thật có thể nhận diện trước khi hoàn tất đánh giá của cơ sở.",
+  "itemBrowserRisk": "API Key tồn tại trong tab này và có thể bị tiện ích hoặc công cụ phát triển đọc.",
+  "itemNoRepository": "Khóa không được ghi vào Repository, URL hoặc Local Storage.",
+  "itemReview": "Mọi nội dung AI phải được nhân viên y tế đủ năng lực rà soát.",
+  "consent": "Tôi hiểu các rủi ro và đồng ý dùng Gemini API Key của mình để thử nghiệm kín.",
+  "errorConsentRequired": "Hãy đọc và chấp nhận thông báo rủi ro BYOK trước."
+}

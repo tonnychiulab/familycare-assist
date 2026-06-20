@@ -1,0 +1,10 @@
+{
+  "title": "Keamanan dan ruang lingkup penggunaan",
+  "summary": "Ini adalah edisi BYOK di browser. Kunci browser tidak dapat dilindungi seperti rahasia backend.",
+  "itemNoRealData": "Jangan masukkan data pasien nyata yang dapat diidentifikasi sebelum tinjauan institusi.",
+  "itemBrowserRisk": "API Key berada di tab ini dan dapat dibaca ekstensi atau alat pengembang.",
+  "itemNoRepository": "Kunci tidak ditulis ke Repository, URL, atau Local Storage situs.",
+  "itemReview": "Semua keluaran AI harus ditinjau tenaga kesehatan yang berkualifikasi.",
+  "consent": "Saya memahami risikonya dan setuju memakai Gemini API Key saya untuk pengujian tertutup.",
+  "errorConsentRequired": "Baca dan setujui pemberitahuan risiko BYOK terlebih dahulu."
+}

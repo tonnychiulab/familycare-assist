@@ -1,0 +1,13 @@
+{
+  "title": "Select a Gemini model",
+  "summary": "The list is loaded dynamically after key validation and includes only generateContent models.",
+  "label": "Model",
+  "verifyFirst": "Verify the API Key first",
+  "choose": "Choose a model",
+  "showPreview": "Show Preview／Experimental models",
+  "resourceName": "Resource name",
+  "lifecycle": "Lifecycle",
+  "inputLimit": "Input token limit",
+  "outputLimit": "Output token limit",
+  "errorRequired": "Select a Gemini model first."
+}

@@ -1,0 +1,10 @@
+{
+  "resetSession": "Start over",
+  "loadExample": "Load example",
+  "importExample": "Import JSON example",
+  "clearInput": "Clear",
+  "startVoice": "Voice input",
+  "stopVoice": "Stop recording",
+  "send": "Send",
+  "close": "Close"
+}

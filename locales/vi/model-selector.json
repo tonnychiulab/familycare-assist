@@ -1,0 +1,13 @@
+{
+  "title": "Chọn mô hình Gemini",
+  "summary": "Danh sách được tải sau khi xác minh khóa và chỉ hiển thị mô hình generateContent.",
+  "label": "Mô hình",
+  "verifyFirst": "Hãy xác minh API Key trước",
+  "choose": "Chọn mô hình",
+  "showPreview": "Hiện mô hình Preview／Experimental",
+  "resourceName": "Tên tài nguyên",
+  "lifecycle": "Vòng đời",
+  "inputLimit": "Giới hạn token đầu vào",
+  "outputLimit": "Giới hạn token đầu ra",
+  "errorRequired": "Hãy chọn mô hình Gemini."
+}

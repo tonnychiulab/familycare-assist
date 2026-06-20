@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0",
+  "caseVersion": "1.0.0",
+  "id": "adolescent-school-refusal",
+  "locale": "zh-TW",
+  "title": {
+    "zh-TW": "18 歲男性：拒學、日夜顛倒與網路遊戲使用",
+    "zh-CN": "18 岁男性：拒学、昼夜颠倒与网络游戏使用",
+    "en": "18-year-old male: school refusal, reversed sleep cycle, and gaming",
+    "th": "ชายอายุ 18 ปี: ไม่ไปโรงเรียน วงจรการนอนกลับด้าน และเล่นเกม",
+    "id": "Laki-laki 18 tahun: menolak sekolah, pola tidur terbalik, dan bermain gim",
+    "vi": "Nam 18 tuổi: từ chối đi học, đảo lộn giấc ngủ và chơi game"
+  },
+  "description": {
+    "zh-TW": "示範如何將主訴、診間觀察、評估與計畫整理成 SOAP，並保留心理社會與安全評估需求。",
+    "en": "Demonstrates SOAP structuring while preserving psychosocial and safety assessment needs."
+  },
+  "status": "demo",
+  "intendedUse": "UI、資料結構與流程示範",
+  "tags": [
+    "family-medicine",
+    "adolescent",
+    "school-refusal",
+    "sleep",
+    "gaming",
+    "mental-health"
+  ],
+  "patient": {
+    "code": "DEMO-018",
+    "age": 18,
+    "sex": "male",
+    "sexLabel": "男性",
+    "visitType": "first-visit",
+    "visitTypeLabel": "初診"
+  },
+  "chiefComplaint": "近三個月拒絕上學、作息日夜顛倒，長時間於房內玩手機遊戲。",
+  "conversation": [
+    {
+      "role": "doctor",
+      "content": "18歲男性，由母親陪同就診。近三個月拒絕上學，作息日夜顛倒，長時間在房內玩手機遊戲。症狀始於一次模擬考成績不佳之後。病患本人少發言，持續使用手機，僅含糊表示偶有肩頸痠痛。"
+    },
+    {
+      "role": "assistant",
+      "content": "建議先分別向病患與母親取得病史，並優先確認自傷／傷人風險、情緒症狀、睡眠、學校功能、物質使用及家庭互動。肩頸不適仍需完成必要理學檢查，但不宜在證據不足時將心理與行為變化完全歸因於頸椎結構問題。"
+    }
+  ],
+  "soap": {
+    "subjective": "18歲男性，由母親陪同就診。主訴近三個月拒絕上學，作息日夜顛倒，長時間於房內玩手機遊戲。母親表示症狀始於一次模擬考成績不佳之後。母親懷疑為憂鬱症或青少年拒學症。病患本人在診間極少發言，持續使用手機，經詢問僅含糊表示偶有肩頸痠痛。母親補充病患於半夜打遊戲時精神亢奮且有激動言語。",
+    "objective": "病患於診間呈低頭姿態，眼神接觸不良，對問診態度消極、防備。\n未執行完整之神經學與頸椎理學檢查（無肢體無力、反射異常或確切的椎動脈缺血徵象）。",
+    "assessment": [
+      "School refusal；考慮 adjustment disorder 或 major depressive disorder，仍需完整評估。",
+      "Problematic internet use／Internet gaming disorder。",
+      "Inverted sleep-wake cycle。",
+      "R/O cervical muscle strain；目前不支持其為心理／行為變化的主要原因。"
+    ],
+    "plan": [
+      "暫緩將症狀完全歸咎於頸椎結構性壓迫，以免延誤心理介入時機。",
+      "進行完整心理社會評估，並評估憂鬱、焦慮、躁期症狀、自傷／傷人風險與物質使用。",
+      "視評估結果轉介青少年醫學科或精神／身心科門診。",
+      "向家屬說明建立健康作息、媒體使用界線與支持性溝通的重要性。",
+      "肩頸症狀依臨床需要完成神經學與肌肉骨骼理學檢查。"
+    ]
+  },
+  "safety": {
+    "requiresClinicianReview": true,
+    "redFlagsToAssess": [
+      "自傷或傷人想法",
+      "嚴重憂鬱、躁期或精神病性症狀",
+      "物質使用",
+      "家庭暴力或校園霸凌",
+      "神經學局部徵象"
+    ],
+    "disclaimer": "此案例僅供介面與資料結構示範，不構成診斷或治療建議。心理健康相關案例應由合格醫師完成風險評估，必要時立即轉介或啟動緊急處置。"
+  }
+}

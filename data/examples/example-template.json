@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0",
+  "caseVersion": "0.1.0",
+  "id": "replace-with-unique-id",
+  "locale": "zh-TW",
+  "title": {
+    "zh-TW": "請填寫案例名稱",
+    "en": "Enter case title"
+  },
+  "description": {
+    "zh-TW": "請說明此案例的教學或示範目的。",
+    "en": "Describe the educational purpose."
+  },
+  "status": "draft",
+  "intendedUse": "UI 與流程示範",
+  "tags": [
+    "family-medicine"
+  ],
+  "patient": {
+    "code": "DEMO-001",
+    "age": 0,
+    "sex": "not-specified",
+    "sexLabel": "未指定",
+    "visitType": "first-visit",
+    "visitTypeLabel": "初診"
+  },
+  "chiefComplaint": "",
+  "conversation": [
+    {
+      "role": "doctor",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    }
+  ],
+  "soap": {
+    "subjective": "",
+    "objective": "",
+    "assessment": [],
+    "plan": []
+  },
+  "safety": {
+    "requiresClinicianReview": true,
+    "redFlagsToAssess": [],
+    "disclaimer": "本案例僅供示範，所有內容須由合格醫事人員確認。"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "demoModeTitle": "AI 輔助模式",
+  "demoModeBody": "請避免輸入可識別個資；所有內容均需由醫事人員確認。",
+  "ready": "就緒",
+  "processing": "處理中",
+  "voiceListening": "語音辨識中…",
+  "exampleLoaded": "範例已載入",
+  "languageChanged": "語言已切換",
+  "sessionReset": "問診工作階段已重設"
+}

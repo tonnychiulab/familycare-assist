@@ -1,0 +1,11 @@
+{
+  "welcome": "Chào mừng đến với FamilyCare Assist. Đây là hệ thống trình diễn; không nhập dữ liệu người bệnh thật.",
+  "chiefComplaintPrompt": "Nhập lý do khám của lần này hoặc tải một ca mẫu từ bảng bên trái.",
+  "exampleLoaded": "Đã tải ca mẫu “{title}”. Hội thoại minh họa và tóm tắt SOAP được hiển thị bên dưới.",
+  "followUpOnset": "Triệu chứng bắt đầu từ khi nào? Trước đó có sự kiện, căng thẳng hoặc khó chịu cơ thể rõ ràng nào không?",
+  "followUpRedFlags": "Trước tiên cần xác nhận nguy cơ an toàn tức thời, như ý nghĩ tự hại hoặc gây hại người khác, thay đổi ý thức, khó thở nặng hoặc dấu hiệu nguy hiểm cấp tính khác.",
+  "followUpMedication": "Vui lòng bổ sung thuốc đang dùng, tiền sử dị ứng và việc sử dụng rượu, chất gây nghiện hoặc phơi nhiễm khác có thể ảnh hưởng triệu chứng.",
+  "followUpPsychosocial": "Vui lòng bổ sung tương tác gia đình, chức năng học tập hoặc công việc, giấc ngủ, ăn uống và các yếu tố căng thẳng gần đây.",
+  "readyForSummary": "Thông tin hiện đủ cho bản tóm tắt sơ bộ, nhưng vẫn cần bác sĩ đánh giá và xác nhận thêm.",
+  "genericReply": "Vui lòng bổ sung thời điểm, mức độ nghiêm trọng và ảnh hưởng của triệu chứng đến sinh hoạt hằng ngày."
+}

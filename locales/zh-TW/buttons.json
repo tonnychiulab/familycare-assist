@@ -1,0 +1,10 @@
+{
+  "resetSession": "重新開始",
+  "loadExample": "載入範例",
+  "importExample": "匯入 JSON 範例",
+  "clearInput": "清除",
+  "startVoice": "語音輸入",
+  "stopVoice": "停止錄音",
+  "send": "送出",
+  "close": "關閉"
+}

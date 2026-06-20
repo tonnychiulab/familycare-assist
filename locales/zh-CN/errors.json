@@ -1,0 +1,13 @@
+{
+  "unknown": "发生未知错误",
+  "localeLoadFailed": "语言文件加载失败",
+  "emptyInput": "请先输入内容",
+  "inputTooLong": "输入内容超过允许长度",
+  "aiUnavailable": "AI 服务目前无法使用",
+  "voiceUnsupported": "此浏览器不支持实时语音识别，请改用文字输入",
+  "microphoneDenied": "麦克风权限被拒绝",
+  "voiceRecognitionFailed": "语音识别失败",
+  "voiceStartFailed": "无法启动语音识别",
+  "exampleLoadFailed": "示例加载失败",
+  "exampleInvalid": "JSON 示例格式不正确"
+}

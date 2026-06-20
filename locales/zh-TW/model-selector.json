@@ -1,0 +1,13 @@
+{
+  "title": "選擇 Gemini 模型",
+  "summary": "清單由 API Key 驗證結果動態取得，只顯示支援 generateContent 的模型。",
+  "label": "模型",
+  "verifyFirst": "請先驗證 API Key",
+  "choose": "請選擇模型",
+  "showPreview": "顯示 Preview／Experimental 模型",
+  "resourceName": "資源名稱",
+  "lifecycle": "生命週期",
+  "inputLimit": "輸入 Token 上限",
+  "outputLimit": "輸出 Token 上限",
+  "errorRequired": "請先選擇 Gemini 模型。"
+}

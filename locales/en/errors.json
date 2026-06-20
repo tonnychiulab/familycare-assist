@@ -1,0 +1,13 @@
+{
+  "unknown": "An unknown error occurred",
+  "localeLoadFailed": "Failed to load language files",
+  "emptyInput": "Enter some content first",
+  "inputTooLong": "The input exceeds the allowed length",
+  "aiUnavailable": "The AI service is currently unavailable",
+  "voiceUnsupported": "This browser does not support live speech recognition. Use text input instead.",
+  "microphoneDenied": "Microphone permission was denied",
+  "voiceRecognitionFailed": "Speech recognition failed",
+  "voiceStartFailed": "Unable to start speech recognition",
+  "exampleLoadFailed": "Failed to load the example",
+  "exampleInvalid": "The JSON example format is invalid"
+}

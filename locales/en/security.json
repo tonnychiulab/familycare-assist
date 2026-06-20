@@ -1,0 +1,10 @@
+{
+  "title": "Security and permitted use",
+  "summary": "This is a browser-side BYOK edition. A browser key cannot be protected like a backend secret.",
+  "itemNoRealData": "Do not enter identifiable real patient data before institutional review is completed.",
+  "itemBrowserRisk": "The API Key exists in this tab and may be read by browser extensions or developer tools.",
+  "itemNoRepository": "The key is not written to the GitHub repository, URL, or this site’s Local Storage.",
+  "itemReview": "All AI output must be reviewed by a qualified healthcare professional.",
+  "consent": "I understand these risks and agree to use my own Gemini API Key for closed testing.",
+  "errorConsentRequired": "Read and accept the BYOK risk notice first."
+}

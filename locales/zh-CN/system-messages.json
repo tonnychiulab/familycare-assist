@@ -1,0 +1,10 @@
+{
+  "demoModeTitle": "AI 辅助模式",
+  "demoModeBody": "请避免输入可识别个人资料；所有内容均需由医务人员确认。",
+  "ready": "就绪",
+  "processing": "处理中",
+  "voiceListening": "语音识别中…",
+  "exampleLoaded": "示例已加载",
+  "languageChanged": "语言已切换",
+  "sessionReset": "问诊会话已重置"
+}

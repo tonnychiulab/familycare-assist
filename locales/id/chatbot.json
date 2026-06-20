@@ -1,0 +1,11 @@
+{
+  "welcome": "Selamat datang di FamilyCare Assist. Ini adalah sistem demonstrasi; jangan masukkan data pasien nyata.",
+  "chiefComplaintPrompt": "Masukkan keluhan utama kunjungan ini, atau muat contoh kasus dari panel kiri.",
+  "exampleLoaded": "Contoh “{title}” telah dimuat. Percakapan demo dan ringkasan SOAP ditampilkan di bawah.",
+  "followUpOnset": "Kapan gejala mulai? Apakah sebelumnya ada peristiwa, stresor, atau keluhan fisik yang jelas?",
+  "followUpRedFlags": "Pastikan dahulu risiko keselamatan segera, seperti pikiran menyakiti diri atau orang lain, perubahan kesadaran, sesak napas berat, atau tanda bahaya akut lain.",
+  "followUpMedication": "Tambahkan obat saat ini, alergi, serta penggunaan alkohol, zat adiktif, atau paparan lain yang mungkin memengaruhi gejala.",
+  "followUpPsychosocial": "Tambahkan interaksi keluarga, fungsi sekolah atau pekerjaan, tidur, nafsu makan, dan stresor terbaru.",
+  "readyForSummary": "Informasi cukup untuk ringkasan awal, tetapi penilaian dan konfirmasi dokter tetap diperlukan.",
+  "genericReply": "Tambahkan waktu, tingkat keparahan, dan dampak gejala terhadap fungsi sehari-hari."
+}

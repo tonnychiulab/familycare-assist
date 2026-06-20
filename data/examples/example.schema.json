@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/familycare-assist/example.schema.json",
+  "title": "FamilyCare Assist Example Case",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "soap"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "caseVersion": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]+$"
+    },
+    "locale": {
+      "type": "string"
+    },
+    "title": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "minProperties": 1
+    },
+    "description": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "status": {
+      "type": "string"
+    },
+    "intendedUse": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "patient": {
+      "type": "object"
+    },
+    "chiefComplaint": {
+      "type": "string"
+    },
+    "conversation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "content"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "doctor",
+              "assistant",
+              "system",
+              "warning",
+              "error"
+            ]
+          },
+          "content": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "soap": {
+      "type": "object",
+      "required": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "properties": {
+        "subjective": {
+          "type": [
+            "string",
+            "array"
+          ]
+        },
+        "objective": {
+          "type": [
+            "string",
+            "array"
+          ]
+        },
+        "assessment": {
+          "type": [
+            "string",
+            "array"
+          ]
+        },
+        "plan": {
+          "type": [
+            "string",
+            "array"
+          ]
+        }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "properties": {
+        "requiresClinicianReview": {
+          "type": "boolean"
+        },
+        "redFlagsToAssess": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "disclaimer": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "emptyKey": "Hãy dán Gemini API Key.",
+  "invalidKey": "API Key không hợp lệ hoặc xác minh thất bại.",
+  "forbidden": "Khóa thiếu quyền, bị hạn chế hoặc Gemini API chưa được bật.",
+  "quota": "Đã đạt hạn ngạch hoặc giới hạn tốc độ.",
+  "serviceUnavailable": "Dịch vụ Gemini tạm thời không khả dụng.",
+  "validationFailed": "Không thể xác minh API Key.",
+  "noModels": "Không có mô hình generateContent cho khóa này.",
+  "badRequest": "Gemini từ chối yêu cầu. Hãy kiểm tra prompt, nội dung và mô hình.",
+  "keyExpired": "API Key không còn hợp lệ và cần xác minh lại.",
+  "modelUnavailable": "Mô hình đã chọn không khả dụng.",
+  "network": "Không thể kết nối Gemini API.",
+  "safetyBlocked": "Gemini chặn nội dung theo chính sách an toàn.",
+  "emptyResponse": "Gemini không trả về văn bản có thể hiển thị."
+}

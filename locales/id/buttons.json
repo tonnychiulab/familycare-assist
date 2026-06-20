@@ -1,0 +1,10 @@
+{
+  "resetSession": "Mulai ulang",
+  "loadExample": "Muat contoh",
+  "importExample": "Impor contoh JSON",
+  "clearInput": "Bersihkan",
+  "startVoice": "Input suara",
+  "stopVoice": "Hentikan rekaman",
+  "send": "Kirim",
+  "close": "Tutup"
+}

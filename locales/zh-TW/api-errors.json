@@ -1,0 +1,15 @@
+{
+  "emptyKey": "請貼上 Gemini API Key。",
+  "invalidKey": "API Key 無效或驗證失敗。",
+  "forbidden": "API Key 權限不足、受到限制，或 Gemini API 尚未啟用。",
+  "quota": "已達配額或速率限制，請檢查用量與計費設定。",
+  "serviceUnavailable": "Gemini 服務暫時無法使用，請稍後再試。",
+  "validationFailed": "無法驗證 API Key，請確認金鑰與網路狀態。",
+  "noModels": "此金鑰找不到可用的 generateContent 模型。",
+  "badRequest": "Gemini 拒絕此請求，請檢查提示詞、內容或模型設定。",
+  "keyExpired": "API Key 已失效或需要重新驗證。",
+  "modelUnavailable": "選擇的模型已無法使用，請重新驗證並選擇模型。",
+  "network": "無法連線至 Gemini API，請檢查網路或瀏覽器政策。",
+  "safetyBlocked": "Gemini 因安全政策阻擋了此次內容。",
+  "emptyResponse": "Gemini 未回傳可顯示的文字內容。"
+}

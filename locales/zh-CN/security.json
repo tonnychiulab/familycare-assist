@@ -1,0 +1,10 @@
+{
+  "title": "安全与使用范围",
+  "summary": "这是浏览器端 BYOK 版本，密钥无法像后端机密一样被完全保护。",
+  "itemNoRealData": "在完成机构审查前，请勿输入可识别的真实患者资料。",
+  "itemBrowserRisk": "API Key 会存在当前标签页的浏览器环境，可能被扩展程序或开发者工具读取。",
+  "itemNoRepository": "API Key 不会写入 GitHub Repository、网址或本站 Local Storage。",
+  "itemReview": "所有 AI 内容都必须由合格医务人员复核。",
+  "consent": "我了解上述风险，并同意使用自己的 Gemini API Key 进行封闭测试。",
+  "errorConsentRequired": "请先阅读并同意 BYOK 风险声明。"
+}

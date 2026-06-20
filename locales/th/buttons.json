@@ -1,0 +1,10 @@
+{
+  "resetSession": "เริ่มใหม่",
+  "loadExample": "โหลดตัวอย่าง",
+  "importExample": "นำเข้าตัวอย่าง JSON",
+  "clearInput": "ล้าง",
+  "startVoice": "ป้อนด้วยเสียง",
+  "stopVoice": "หยุดบันทึก",
+  "send": "ส่ง",
+  "close": "ปิด"
+}

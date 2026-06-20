@@ -1,0 +1,10 @@
+{
+  "resetSession": "Bắt đầu lại",
+  "loadExample": "Tải ca mẫu",
+  "importExample": "Nhập ca mẫu JSON",
+  "clearInput": "Xóa",
+  "startVoice": "Nhập bằng giọng nói",
+  "stopVoice": "Dừng ghi âm",
+  "send": "Gửi",
+  "close": "Đóng"
+}

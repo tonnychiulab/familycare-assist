@@ -1,0 +1,13 @@
+{
+  "title": "选择 Gemini 模型",
+  "summary": "列表由 API Key 验证结果动态获取，仅显示支持 generateContent 的模型。",
+  "label": "模型",
+  "verifyFirst": "请先验证 API Key",
+  "choose": "请选择模型",
+  "showPreview": "显示 Preview／Experimental 模型",
+  "resourceName": "资源名称",
+  "lifecycle": "生命周期",
+  "inputLimit": "输入 Token 上限",
+  "outputLimit": "输出 Token 上限",
+  "errorRequired": "请先选择 Gemini 模型。"
+}

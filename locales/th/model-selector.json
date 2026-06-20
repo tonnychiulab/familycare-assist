@@ -1,0 +1,13 @@
+{
+  "title": "เลือกโมเดล Gemini",
+  "summary": "โหลดรายการแบบไดนามิกหลังยืนยันคีย์ และแสดงเฉพาะโมเดล generateContent",
+  "label": "โมเดล",
+  "verifyFirst": "กรุณายืนยัน API Key ก่อน",
+  "choose": "เลือกโมเดล",
+  "showPreview": "แสดงโมเดล Preview／Experimental",
+  "resourceName": "ชื่อทรัพยากร",
+  "lifecycle": "วงจรชีวิต",
+  "inputLimit": "ขีดจำกัด Input Token",
+  "outputLimit": "ขีดจำกัด Output Token",
+  "errorRequired": "กรุณาเลือกโมเดล Gemini"
+}

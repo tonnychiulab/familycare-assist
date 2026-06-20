@@ -1,0 +1,11 @@
+{
+  "welcome": "Welcome to FamilyCare Assist. This is a demonstration system; do not enter real patient information.",
+  "chiefComplaintPrompt": "Enter the chief complaint for this visit, or load an example case from the left panel.",
+  "exampleLoaded": "Loaded example: “{title}”. The demonstration conversation and SOAP summary are shown below.",
+  "followUpOnset": "When did the symptoms begin? Was there a clear event, stressor, or physical complaint beforehand?",
+  "followUpRedFlags": "First confirm immediate safety risks, including thoughts of self-harm or harm to others, altered consciousness, severe breathing difficulty, or other acute warning signs.",
+  "followUpMedication": "Please add current medications, allergies, and any alcohol, substance, or other exposure that may affect the symptoms.",
+  "followUpPsychosocial": "Please add family interactions, school or work functioning, sleep, appetite, and recent stressors.",
+  "readyForSummary": "There is enough information for a preliminary summary, but further clinician assessment and confirmation are still required.",
+  "genericReply": "Please add the timing, severity, and effect of the symptoms on daily functioning."
+}
