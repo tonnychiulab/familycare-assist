@@ -1,0 +1,6 @@
+.select-control,.message-input{width:100%;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);border-radius:var(--radius-sm);padding:.7rem .8rem}
+.select-control:focus,.message-input:focus{outline:none;border-color:var(--color-primary);box-shadow:var(--focus-ring)}
+.field-inline{display:inline-flex;min-width:min(13rem,42vw)}.composer{border-top:1px solid var(--color-border);padding:var(--space-4) var(--space-5) var(--space-5);background:var(--color-surface)}
+.message-input{min-height:4.5rem;max-height:12rem;resize:vertical}.composer-footer{display:flex;justify-content:space-between;gap:var(--space-3);align-items:center;margin-top:var(--space-3)}
+.composer-status{display:flex;flex-wrap:wrap;gap:var(--space-3);color:var(--color-text-muted);font-size:.8rem}
+.composer-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:var(--space-2)}.file-button{cursor:pointer}.voice-status.is-recording{color:var(--color-danger);font-weight:600}

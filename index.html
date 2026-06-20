@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#155eef">
+  <meta name="description" content="家醫智問 FamilyCare Assist 家庭醫學科智慧問診輔助系統">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Permissions-Policy" content="camera=(), geolocation=(), payment=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://generativelanguage.googleapis.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <link rel="icon" href="assets/brand/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/typography.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/chatbot.css">
+  <link rel="stylesheet" href="styles/forms.css">
+  <link rel="stylesheet" href="styles/button-theme.css">
+  <link rel="stylesheet" href="styles/setup-gate.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/accessibility.css">
+
+  <script src="scripts/config.js" defer></script>
+  <script src="scripts/brand.js" defer></script>
+  <script src="scripts/error-handler.js" defer></script>
+  <script src="scripts/i18n.js" defer></script>
+  <script src="scripts/security-policy.js" defer></script>
+  <script src="scripts/prompt-manager.js" defer></script>
+  <script src="scripts/credential-vault.js" defer></script>
+  <script src="scripts/gemini-model-service.js" defer></script>
+  <script src="scripts/request-builder.js" defer></script>
+  <script src="scripts/session.js" defer></script>
+  <script src="scripts/validation.js" defer></script>
+  <script src="scripts/example-service.js" defer></script>
+  <script src="scripts/voice-adapter.js" defer></script>
+  <script src="scripts/api-client.js" defer></script>
+  <script src="scripts/chatbot.js" defer></script>
+  <script src="scripts/ui.js" defer></script>
+  <script src="scripts/setup-gate.js" defer></script>
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#mainContent" data-i18n="accessibility.skipToContent">跳至主要內容</a>
+
+  <div id="app" class="app-shell" aria-busy="true">
+    <header class="app-header">
+      <div class="brand-block">
+        <img class="brand-logo" src="assets/brand/logo.svg" alt="">
+        <div>
+          <div class="brand-name" id="brandName">家醫智問 FamilyCare Assist</div>
+          <div class="brand-subtitle" data-i18n="ui.productSubtitle">家庭醫學科智慧問診輔助系統</div>
+        </div>
+      </div>
+      <nav class="header-actions" aria-label="Application actions">
+        <label class="field-inline" for="languageSelect">
+          <span class="sr-only" data-i18n="ui.language">語言</span>
+          <select id="languageSelect" class="select-control" data-i18n-aria-label="accessibility.languageSelector">
+            <option value="zh-TW">正體中文</option>
+            <option value="zh-CN">简体中文</option>
+            <option value="en">English</option>
+            <option value="th">ไทย</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="vi">Tiếng Việt</option>
+          </select>
+        </label>
+        <button id="settingsButton" class="btn btn-secondary" type="button" data-i18n="setup.openSettings">設定</button>
+        <button id="lockButton" class="btn btn-secondary" type="button" data-i18n="setup.lockSystem" hidden>鎖定</button>
+        <button id="resetButton" class="btn btn-secondary" type="button" data-i18n="buttons.resetSession" hidden>重新開始</button>
+      </nav>
+    </header>
+
+    <section id="setupGate" class="setup-shell" aria-labelledby="setupTitle">
+      <div class="setup-hero">
+        <span class="eyebrow" data-i18n="setup.eyebrow">V1 · GitHub Pages BYOK</span>
+        <h1 id="setupTitle" data-i18n="setup.title">設定 Gemini 與醫師提示詞</h1>
+        <p data-i18n="setup.subtitle">完成提示詞、API Key 驗證與模型選擇後，才能進入問診對話。</p>
+      </div>
+
+      <div class="setup-grid">
+        <section class="setup-card setup-card-wide" aria-labelledby="securityTitle">
+          <div class="setup-card-heading">
+            <span class="step-number">1</span>
+            <div>
+              <h2 id="securityTitle" data-i18n="security.title">安全與使用範圍</h2>
+              <p data-i18n="security.summary">這是瀏覽器端 BYOK 版本，金鑰無法像後端祕密一樣被完全保護。</p>
+            </div>
+          </div>
+          <div class="security-notice" role="note">
+            <ul>
+              <li data-i18n="security.itemNoRealData">未完成機構審查前，請勿輸入可識別的真實病患資料。</li>
+              <li data-i18n="security.itemBrowserRisk">API Key 會存在此分頁的瀏覽器環境，可能被瀏覽器擴充功能或開發者工具讀取。</li>
+              <li data-i18n="security.itemNoRepository">API Key 不會寫入 GitHub Repository、網址或本網站的 Local Storage。</li>
+              <li data-i18n="security.itemReview">所有 AI 內容都必須由合格醫事人員覆核。</li>
+            </ul>
+          </div>
+          <label class="consent-row" for="securityConsent">
+            <input id="securityConsent" type="checkbox">
+            <span data-i18n="security.consent">我了解上述風險，並同意以自己的 Gemini API Key 進行封閉測試。</span>
+          </label>
+        </section>
+
+        <section class="setup-card" aria-labelledby="promptTitle">
+          <div class="setup-card-heading">
+            <span class="step-number">2</span>
+            <div>
+              <h2 id="promptTitle" data-i18n="prompt-editor.title">System Prompt 編輯器</h2>
+              <p data-i18n="prompt-editor.summary">貼上醫師自訂提示詞；平台安全前言與技術約束會自動附加。</p>
+            </div>
+          </div>
+
+          <label for="promptName" data-i18n="prompt-editor.nameLabel">提示詞名稱</label>
+          <input id="promptName" class="text-control" type="text" maxlength="80" autocomplete="off" data-i18n-placeholder="prompt-editor.namePlaceholder">
+
+          <div class="field-heading-row">
+            <label for="systemPrompt" data-i18n="prompt-editor.promptLabel">醫師自訂 System Prompt</label>
+            <span id="promptCounter" class="field-counter">0 / 30000</span>
+          </div>
+          <textarea id="systemPrompt" class="prompt-editor" rows="16" maxlength="30000" spellcheck="false" data-i18n-placeholder="prompt-editor.promptPlaceholder"></textarea>
+
+          <div class="prompt-meta" aria-live="polite">
+            <span><strong data-i18n="prompt-editor.estimatedTokens">估計 Token</strong>：<span id="tokenEstimate">0</span></span>
+            <span><strong data-i18n="prompt-editor.fingerprint">指紋</strong>：<code id="promptFingerprint">—</code></span>
+          </div>
+
+          <div class="setup-actions wrap-actions">
+            <label class="btn btn-ghost file-button" for="promptFileInput">
+              <span data-i18n="prompt-editor.importFile">匯入 TXT／MD</span>
+            </label>
+            <input id="promptFileInput" class="sr-only" type="file" accept="text/plain,text/markdown,.txt,.md">
+            <button id="applyPromptButton" class="btn btn-primary" type="button" data-i18n="prompt-editor.apply">套用提示詞</button>
+            <button id="previewPromptButton" class="btn btn-secondary" type="button" data-i18n="prompt-editor.preview">預覽組合提示詞</button>
+            <button id="clearPromptButton" class="btn btn-ghost" type="button" data-i18n="prompt-editor.clear">清除提示詞</button>
+          </div>
+
+          <label class="consent-row compact" for="rememberPromptSession">
+            <input id="rememberPromptSession" type="checkbox">
+            <span data-i18n="prompt-editor.rememberSession">只在目前分頁期間記住提示詞</span>
+          </label>
+          <p id="promptValidationMessage" class="field-message" aria-live="polite"></p>
+        </section>
+
+        <section class="setup-card" aria-labelledby="apiKeyTitle">
+          <div class="setup-card-heading">
+            <span class="step-number">3</span>
+            <div>
+              <h2 id="apiKeyTitle" data-i18n="setup.apiKeyTitle">Gemini API Key</h2>
+              <p data-i18n="setup.apiKeySummary">金鑰驗證成功後，系統才會載入可用模型。</p>
+            </div>
+          </div>
+
+          <label for="apiKeyInput" data-i18n="setup.apiKeyLabel">API Key</label>
+          <div class="secret-input-row">
+            <input id="apiKeyInput" class="text-control secret-input" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" data-i18n-placeholder="setup.apiKeyPlaceholder">
+            <button id="toggleKeyVisibilityButton" class="btn btn-ghost compact-button" type="button" data-i18n="setup.showKey">顯示</button>
+          </div>
+
+          <label class="consent-row compact" for="rememberKeySession">
+            <input id="rememberKeySession" type="checkbox">
+            <span data-i18n="setup.rememberKeySession">只在目前分頁期間記住 API Key</span>
+          </label>
+
+          <div class="credential-status" id="credentialStatus" data-state="unconfigured" role="status" aria-live="polite">
+            <span class="status-dot" aria-hidden="true"></span>
+            <div>
+              <strong id="credentialStatusTitle" data-i18n="setup.keyNotVerified">尚未驗證</strong>
+              <p id="credentialStatusDetail" data-i18n="setup.keyNotVerifiedDetail">貼上金鑰並按下驗證。</p>
+            </div>
+          </div>
+
+          <div id="verifiedKeyMeta" class="verified-meta" hidden>
+            <span><strong data-i18n="setup.keyEnding">金鑰末四碼</strong>：<code id="keyLastFour">—</code></span>
+            <span><strong data-i18n="setup.verifiedAt">驗證時間</strong>：<span id="keyVerifiedAt">—</span></span>
+          </div>
+
+          <div class="setup-actions">
+            <button id="validateKeyButton" class="btn btn-primary" type="button" data-i18n="setup.validateKey">驗證 API Key</button>
+            <button id="clearKeyButton" class="btn btn-ghost" type="button" data-i18n="setup.clearKey">清除金鑰</button>
+          </div>
+        </section>
+
+        <section class="setup-card setup-card-wide" aria-labelledby="modelTitle">
+          <div class="setup-card-heading">
+            <span class="step-number">4</span>
+            <div>
+              <h2 id="modelTitle" data-i18n="model-selector.title">選擇 Gemini 模型</h2>
+              <p data-i18n="model-selector.summary">清單由 API Key 驗證結果動態取得，只顯示支援 generateContent 的模型。</p>
+            </div>
+          </div>
+
+          <div class="model-controls">
+            <label class="field-grow" for="modelSelect">
+              <span data-i18n="model-selector.label">模型</span>
+              <select id="modelSelect" class="select-control" disabled>
+                <option value="" data-i18n="model-selector.verifyFirst">請先驗證 API Key</option>
+              </select>
+            </label>
+            <label class="consent-row compact model-preview-toggle" for="showPreviewModels">
+              <input id="showPreviewModels" type="checkbox">
+              <span data-i18n="model-selector.showPreview">顯示 Preview／Experimental 模型</span>
+            </label>
+          </div>
+          <div id="modelDetails" class="model-details" hidden></div>
+        </section>
+      </div>
+
+      <div class="setup-footer-actions">
+        <div id="gateChecklist" class="gate-checklist" aria-live="polite"></div>
+        <button id="enterChatButton" class="btn btn-primary btn-large" type="button" disabled data-i18n="setup.enterChat">進入問診</button>
+      </div>
+    </section>
+
+    <section id="promptPreviewDialog" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="promptPreviewTitle" hidden>
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 id="promptPreviewTitle" data-i18n="prompt-editor.previewTitle">組合後 System Prompt</h2>
+          <button id="closePromptPreviewButton" class="btn btn-ghost compact-button" type="button" data-i18n="buttons.close">關閉</button>
+        </div>
+        <p class="helper-text" data-i18n="prompt-editor.previewWarning">此預覽不包含 API Key，但包含完整的醫師自訂提示詞。</p>
+        <pre id="promptPreviewContent" class="prompt-preview"></pre>
+      </div>
+    </section>
+
+    <section id="chatApplication" hidden>
+      <div class="runtime-status-bar" role="status">
+        <span><strong data-i18n="setup.activePrompt">提示詞</strong>：<span id="activePromptName">—</span> <code id="activePromptHash">—</code></span>
+        <span><strong data-i18n="setup.activeModel">模型</strong>：<span id="activeModelName">—</span></span>
+        <span><strong data-i18n="setup.apiStatus">API</strong>：<span class="status-inline-ok" data-i18n="setup.apiVerified">已驗證</span> · <code id="activeKeyLastFour">••••</code></span>
+      </div>
+
+      <div class="notice notice-warning" role="status">
+        <strong data-i18n="system.demoModeTitle">AI 輔助模式</strong>
+        <span data-i18n="system.demoModeBody">請避免輸入可識別個資；所有內容均需由醫事人員確認。</span>
+      </div>
+
+      <main id="mainContent" class="workspace" tabindex="-1">
+        <aside class="panel sidebar-panel" aria-labelledby="patientPanelTitle">
+          <div class="panel-header">
+            <h2 id="patientPanelTitle" data-i18n="ui.patientContext">病患背景</h2>
+            <span class="status-chip" data-i18n="ui.mockData">虛構資料</span>
+          </div>
+          <dl class="patient-grid">
+            <div><dt data-i18n="ui.patientCode">病患代碼</dt><dd id="patientCode">DEMO-018</dd></div>
+            <div><dt data-i18n="ui.age">年齡</dt><dd id="patientAge">18</dd></div>
+            <div><dt data-i18n="ui.sex">生理性別</dt><dd id="patientSex" data-i18n="ui.male">男性</dd></div>
+            <div><dt data-i18n="ui.visitType">就診類型</dt><dd id="visitType" data-i18n="ui.firstVisit">初診</dd></div>
+          </dl>
+
+          <section class="example-section" aria-labelledby="exampleTitle">
+            <div class="section-heading">
+              <h3 id="exampleTitle" data-i18n="ui.exampleLibrary">範例案例庫</h3>
+              <span class="badge" data-i18n="ui.extensible">可擴充</span>
+            </div>
+            <label for="exampleSelect" data-i18n="ui.chooseExample">選擇範例</label>
+            <select id="exampleSelect" class="select-control"></select>
+            <div class="button-stack">
+              <button id="loadExampleButton" class="btn btn-secondary" type="button" data-i18n="buttons.loadExample">載入範例</button>
+              <label class="btn btn-ghost file-button" for="exampleFileInput">
+                <span data-i18n="buttons.importExample">匯入 JSON 範例</span>
+              </label>
+              <input id="exampleFileInput" class="sr-only" type="file" accept="application/json,.json">
+            </div>
+          </section>
+        </aside>
+
+        <section class="panel chat-panel" aria-labelledby="chatTitle">
+          <div class="panel-header chat-header">
+            <div>
+              <h1 id="chatTitle" data-i18n="ui.consultationChat">問診對談</h1>
+              <p class="panel-description" data-i18n="ui.chatDescription">由醫師輸入主訴，Gemini 依指定提示詞協助追問與整理。</p>
+            </div>
+            <span id="connectionStatus" class="status-chip status-ready" data-i18n="system.ready">就緒</span>
+          </div>
+          <div id="messageList" class="message-list" role="log" aria-live="polite" aria-relevant="additions text"></div>
+
+          <form id="chatForm" class="composer" novalidate>
+            <label for="messageInput" class="sr-only" data-i18n="ui.messageInputLabel">輸入主訴或補充內容</label>
+            <textarea id="messageInput" class="message-input" rows="2" maxlength="6000" data-i18n-placeholder="ui.messagePlaceholder" aria-describedby="composerHelp characterCount"></textarea>
+            <div class="composer-footer">
+              <div class="composer-status">
+                <span id="voiceStatus" class="voice-status" aria-live="polite"></span>
+                <span id="characterCount" class="character-count">0 / 6000</span>
+              </div>
+              <div class="composer-actions">
+                <button id="clearInputButton" class="btn btn-ghost" type="button" data-i18n="buttons.clearInput">清除</button>
+                <button id="voiceButton" class="btn btn-voice" type="button" aria-pressed="false">
+                  <span class="voice-icon" aria-hidden="true">●</span>
+                  <span id="voiceButtonLabel" data-i18n="buttons.startVoice">語音輸入</span>
+                </button>
+                <button id="sendButton" class="btn btn-primary" type="submit" data-i18n="buttons.send">送出</button>
+              </div>
+            </div>
+            <p id="composerHelp" class="helper-text" data-i18n="ui.voiceDisclaimer">語音轉錄內容須由醫師確認後才會送出。</p>
+          </form>
+        </section>
+
+        <aside class="panel summary-panel" aria-labelledby="summaryTitle">
+          <div class="panel-header">
+            <h2 id="summaryTitle" data-i18n="ui.soapSummary">SOAP 摘要</h2>
+            <span class="status-chip status-review" data-i18n="ui.requiresReview">需醫師確認</span>
+          </div>
+          <div id="summaryEmpty" class="empty-state">
+            <div class="empty-icon" aria-hidden="true">◎</div>
+            <p data-i18n="ui.summaryEmpty">載入範例後，SOAP 摘要會顯示於此；一般對談回覆顯示於聊天區。</p>
+          </div>
+          <div id="soapSummary" class="soap-summary" hidden>
+            <section class="soap-card"><h3><span>S</span><span data-i18n="ui.subjective">Subjective</span></h3><div id="soapSubjective" class="soap-content"></div></section>
+            <section class="soap-card"><h3><span>O</span><span data-i18n="ui.objective">Objective</span></h3><div id="soapObjective" class="soap-content"></div></section>
+            <section class="soap-card"><h3><span>A</span><span data-i18n="ui.assessment">Assessment</span></h3><div id="soapAssessment" class="soap-content"></div></section>
+            <section class="soap-card"><h3><span>P</span><span data-i18n="ui.plan">Plan</span></h3><div id="soapPlan" class="soap-content"></div></section>
+            <div class="safety-note"><strong data-i18n="ui.safetyReminder">安全提醒</strong><p id="safetyReminderText"></p></div>
+          </div>
+        </aside>
+      </main>
+    </section>
+
+    <footer class="app-footer">
+      <span id="footerBrand">家醫智問 FamilyCare Assist</span><span>·</span>
+      <span id="appVersion">v1.0.0</span><span>·</span>
+      <span data-i18n="ui.prototypeOnly">GitHub Pages BYOK 版本</span>
+    </footer>
+  </div>
+
+  <div id="toastRegion" class="toast-region" aria-live="assertive" aria-atomic="true"></div>
+  <noscript><div class="noscript-message">This application requires JavaScript.</div></noscript>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.btn{min-height:2.65rem;min-width:2.65rem;border:1px solid transparent;border-radius:var(--radius-sm);padding:.62rem .95rem;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:600;text-decoration:none;text-align:center;line-height:1.2;transition:background-color 120ms ease,border-color 120ms ease,transform 120ms ease}
+.btn:hover:not(:disabled){transform:translateY(-1px)}.btn:active:not(:disabled){transform:translateY(0)}.btn:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+.btn:disabled{background:var(--button-disabled-background);color:var(--button-disabled-text);cursor:not-allowed;transform:none}
+.btn-primary{background:var(--button-primary-background);color:var(--button-primary-text)}.btn-primary:hover:not(:disabled){background:var(--button-primary-hover)}
+.btn-secondary{background:var(--button-secondary-background);color:var(--button-secondary-text);border-color:var(--color-border)}.btn-secondary:hover:not(:disabled){background:var(--button-secondary-hover)}
+.btn-ghost{background:transparent;color:var(--color-text);border-color:var(--color-border)}.btn-ghost:hover:not(:disabled){background:var(--color-surface-muted)}
+.btn-voice{background:var(--button-voice-background);color:var(--button-voice-text);border-color:#c9dcff}.btn-voice.is-recording{background:var(--button-voice-recording-background);color:var(--button-voice-recording-text);border-color:var(--button-voice-recording-background)}
+.voice-icon{font-size:.7rem}

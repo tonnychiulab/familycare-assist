@@ -1,0 +1,16 @@
+.chat-header{padding:var(--space-5) var(--space-5) 0;margin-bottom:0}
+.message-list{flex:1;min-height:24rem;max-height:calc(100vh - 19rem);overflow-y:auto;padding:var(--space-5);display:flex;flex-direction:column;gap:var(--space-4);scroll-behavior:smooth}
+.message{display:flex;gap:var(--space-3);align-items:flex-start;max-width:88%}.message-doctor{align-self:flex-end;flex-direction:row-reverse}
+.message-avatar{width:2rem;height:2rem;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;font-size:.75rem;font-weight:700;background:var(--color-surface-muted);border:1px solid var(--color-border)}
+.message-doctor .message-avatar{background:var(--color-primary);color:#fff;border-color:var(--color-primary)}
+.message-assistant .message-avatar{background:var(--color-success-soft);color:var(--color-success);border-color:#b7e3d0}
+.message-system .message-avatar,.message-warning .message-avatar{background:var(--color-warning-soft);color:var(--color-warning);border-color:#f2d28c}
+.message-error .message-avatar{background:var(--color-danger-soft);color:var(--color-danger);border-color:#f0b2ad}
+.message-bubble{min-width:0}.message-meta{display:flex;gap:var(--space-2);align-items:baseline;color:var(--color-text-muted);font-size:.76rem;margin-bottom:.25rem}
+.message-doctor .message-meta{justify-content:flex-end}.message-content{padding:.8rem 1rem;border-radius:.95rem;background:var(--color-surface-muted);border:1px solid var(--color-border);white-space:pre-wrap;overflow-wrap:anywhere}
+.message-doctor .message-content{background:var(--color-primary);color:#fff;border-color:var(--color-primary);border-top-right-radius:.25rem}
+.message-assistant .message-content{border-top-left-radius:.25rem}.message-warning .message-content{background:var(--color-warning-soft);border-color:#f2d28c}
+.message-error .message-content{background:var(--color-danger-soft);border-color:#f0b2ad}
+.typing-indicator{display:inline-flex;gap:.25rem;align-items:center;min-height:1.3rem}.typing-indicator span{width:.38rem;height:.38rem;border-radius:50%;background:currentColor;opacity:.35;animation:typing 1.2s infinite ease-in-out}
+.typing-indicator span:nth-child(2){animation-delay:.15s}.typing-indicator span:nth-child(3){animation-delay:.3s}
+@keyframes typing{0%,80%,100%{transform:translateY(0);opacity:.3}40%{transform:translateY(-.25rem);opacity:.85}}
